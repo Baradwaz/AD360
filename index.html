@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ManageEngine AD360 – Unified IAM Suite</title>
+  <style>
+    :root {
+      --primary: #0d47a1;
+      --accent: #00bfa5;
+      --light: #f5f7fa;
+      --dark: #1b1b1b;
+      --card: #ffffff;
+      --border: #e0e0e0;
+      --benefit-bg: #e3f2fd;
+      --roi-bg: #fffde7;
+      --roi-border: #ffecb3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+    }
+    header {
+      background: linear-gradient(90deg, var(--primary) 75%, var(--accent));
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem 2.5rem;
+    }
+    header img {
+      max-width: 360px;
+      width: 90%;
+      margin: 2rem auto 0;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,.15);
+    }
+    h1, h2, h3 { margin-top: 0; }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    .grid-auto {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 12px rgba(26,35,126,.07);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      background: #d7d7d7;
+    }
+    .section-title {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .benefits-section {
+      background: var(--benefit-bg);
+      border-radius: 12px;
+      padding: 2rem 1rem;
+      margin-bottom: 2rem;
+    }
+    .roi-section {
+      background: var(--roi-bg);
+      border: 1px solid var(--roi-border);
+      border-radius: 12px;
+      padding: 2rem 1rem;
+      margin-bottom: 2rem;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 2rem 0 1rem;
+      transition: background 0.2s;
+    }
+    .cta-btn:hover {
+      background: #00897b;
+    }
+    .footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+    .footer a { color: #80d8ff; }
+    @media(max-width: 700px) {
+      header img { max-width: 95vw; }
+      .container { padding: 1rem 0.5rem; }
+      .grid-auto { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ManageEngine AD360</h1>
+    <h2>Unified Identity & Access Management for Active Directory and Cloud</h2>
+    <p>Streamline user lifecycle management, secure identities with MFA, audit AD changes, and ensure regulatory compliance—all in one integrated console.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTznEiEuEu8jOLPsObpqEK43XX8Lls6Kgsztw&s" alt="AD360 Dashboard Preview">
+    <a href="https://demo.ad360.manageengine.com" class="cta-btn">Live Demo</a>
+  </header>
+
+
+  <div class="container">
+  <h2 class="section-title">Key Modules in AD360</h2>
+  <div class="grid-auto">
+    <div class="card">
+      <img src="https://www.miniorange.com/blog/assets/2023/provisioning.webp" alt="User Provisioning">
+      <h3>User Provisioning & Deprovisioning</h3>
+      <ul>
+        <li>Automate onboarding across AD, Exchange, Microsoft 365, and Google Workspace</li>
+        <li>Role-based templates, CSV imports, and HRMS integrations</li>
+        <li>Bulk user management with zero-touch automation</li>
+      </ul>
+    </div>
+    <div class="card">
+      <img src="https://www.strongdm.com/hubfs/625f136cf33b1e45517b3d75_passwordless-authentication.jpeg" alt="Multi-Factor Authentication">
+      <h3>Multi-Factor Authentication (MFA)</h3>
+      <ul>
+        <li>MFA for AD logins, VPN, RD Web, OWA, endpoints</li>
+        <li>20+ authenticators including FIDO2, TOTP, and biometrics</li>
+        <li>Enforce MFA based on user group, IP, time, or device</li>
+      </ul>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCguh6LJIyn7FMNKpWgMH_bTC2U6SQkm_tGA&s" alt="Delegation">
+      <h3>Help Desk Delegation</h3>
+      <ul>
+        <li>Granular, OU-based task delegation to non-admin users</li>
+        <li>Audit logs of delegated actions and role-based controls</li>
+        <li>Web-based AD management interface for help desk teams</li>
+      </ul>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLwGLTAXEcF25A5LFImZgzCO1QJIng-4Hsxg&s" alt="AD Auditing">
+      <h3>Active Directory Change Auditing</h3>
+      <ul>
+        <li>Track changes to users, groups, GPOs, logons, file shares</li>
+        <li>Real-time alerts for privileged activity or policy violations</li>
+        <li>Preconfigured compliance-ready reports (GDPR, HIPAA, SOX)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <img src="https://www.newbreedmarketing.com/hubfs/reporting.png" alt="Reports & Compliance">
+      <h3>Reports & Compliance</h3>
+      <ul>
+        <li>300+ pre-built reports for auditing, logons, inactive users</li>
+        <li>Export to PDF/CSV, schedule reports, automate delivery</li>
+        <li>Track privilege escalations and stale accounts</li>
+      </ul>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyDf9RkXdFpVUU0viXNzUype_gC1NC4sYP4A&s" alt="Identity Governance">
+      <h3>Identity Governance & Review</h3>
+      <ul>
+        <li>Periodic access review campaigns for AD, M365, apps</li>
+        <li>Certify entitlements, detect toxic combinations</li>
+        <li>Delegate reviewers and maintain audit trails</li>
+      </ul>
+    </div>
+    <div class="card">
+      <img src="data:image/jpeg;base64,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" alt="Group Management">
+      <h3>Group Management & Cleanups</h3>
+      <ul>
+        <li>Bulk manage distribution & security groups</li>
+        <li>Identify nested, unused, or empty groups</li>
+        <li>Automated clean-up based on inactivity rules</li>
+      </ul>
+    </div>
+    <div class="card">
+      <img src="https://nandbox.com/wp-content/uploads/2023/03/Advantages-and-Disadvantages-of-Integrations.webp" alt="Integrations">
+      <h3>Integrations & APIs</h3>
+      <ul>
+        <li>Connect with HR systems (Workday, BambooHR, SAP)</li>
+        <li>REST APIs for external IAM workflows</li>
+        <li>SSO, SIEM, ticketing, and IAM tools integration</li>
+      </ul>
+    </div>
+    <div class="card">
+      <img src="https://knowmax-ai-website.s3.amazonaws.com/wp-content/uploads/2022/01/12175653/Self-service-portal.jpg" alt="Self-Service Portal">
+      <h3>Self-Service Portal</h3>
+      <ul>
+        <li>End users reset passwords, unlock accounts securely</li>
+        <li>AD attribute updates via browser or mobile app</li>
+        <li>Multi-factor validation before changes apply</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2 class="section-title">Business Benefits</h2>
+  <div class="benefits-section grid-auto">
+    <div class="card"><h3>Centralized IAM Console</h3><p>Single-pane-of-glass to manage, monitor, and secure all identities—on-prem and cloud.</p></div>
+    <div class="card"><h3>Faster User Lifecycle Management</h3><p>Automated provisioning, deprovisioning, and access changes reduce manual effort and errors.</p></div>
+    <div class="card"><h3>Improved Compliance Posture</h3><p>Prebuilt reports and real-time alerts help organizations meet GDPR, SOX, HIPAA, and other mandates.</p></div>
+    <div class="card"><h3>Reduced Help Desk Workload</h3><p>Self-service password management and delegated admin controls reduce tickets by up to 40%.</p></div>
+    <div class="card"><h3>Zero Trust & Least Privilege</h3><p>Context-aware MFA, access review, and risk-based access support Zero Trust implementation.</p></div>
+    <div class="card"><h3>Rapid Integration</h3><p>Connect to HRMS, ticketing systems, and cloud services with out-of-the-box connectors and APIs.</p></div>
+  </div>
+</div>
+
+<div class="container">
+  <h2 class="section-title">ROI: Tangible Outcomes</h2>
+  <div class="roi-section grid-auto">
+    <div class="card roi-card">
+      <h3>40–60% Help Desk Ticket Reduction</h3>
+      <p>Automated user provisioning and password self-service eliminate repetitive tickets.</p>
+    </div>
+    <div class="card roi-card">
+      <h3>50% Faster Audit Readiness</h3>
+      <p>Real-time tracking and scheduled compliance reports streamline audit preparation.</p>
+    </div>
+    <div class="card roi-card">
+      <h3>3x Faster Onboarding & Offboarding</h3>
+      <p>Integrated workflows sync new user creation across hybrid apps in minutes.</p>
+    </div>
+    <div class="card roi-card">
+      <h3>60% Reduction in Privilege Abuse</h3>
+      <p>Access reviews and granular delegation reduce misuse of administrative rights.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2 class="section-title">Why Choose AD360?</h2>
+  <ul>
+    <li>Unified platform for provisioning, auditing, SSO, MFA, governance, and reporting</li>
+    <li>Cloud-ready, scalable architecture supporting hybrid AD environments</li>
+    <li>100% agentless deployment with rich REST APIs and integrations</li>
+    <li>Prebuilt compliance support for GDPR, SOX, HIPAA, ISO 27001</li>
+    <li>Modular licensing for ADManager Plus, ADAudit Plus, ADSelfService Plus, Exchange Reporter Plus</li>
+    <li>Faster ROI with automation, delegation, and self-service capabilities</li>
+  </ul>
+ 
+</div>
+
+
+  <div class="footer">
+    <p>&copy; 2025 Baradwaz. All rights reserved.</p>
+    <p><a href="https://demo.ad360.manageengine.com">Live Demo</a> | <a href="https://www.manageengine.com/ad360/">Product Page</a></p>
+  </div>
+</body>
+</html>
+
